@@ -1,2 +1,3 @@
-Eastern Utah based software developer with over a decade of experience in the tech industry.
+Eastern Utah based software developer.
+
 Utah State Aggie.
