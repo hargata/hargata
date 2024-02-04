@@ -1,3 +1,3 @@
-Eastern Utah based software developer.
+Eastern Utah Desert Dweller
 
 Utah State Aggie.
