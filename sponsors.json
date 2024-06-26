@@ -1,6 +1,6 @@
 {
-        "LifeTime" : [],
-        "Bronze" : ["iotech", "JP",  "JY", "Kit Knox", "umn"],
+        "LifeTime" : ["cpujoe"],
+        "Bronze" : ["iotech", "JP", "Kit Knox", "umn"],
         "Silver" : ["Darren F."],
         "Gold" : []
 }
