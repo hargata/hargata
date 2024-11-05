@@ -1,25 +1,85 @@
-<html>
-  <head>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="https://lubelogger.com/favicon.ico">
     <title>Hargata Softworks</title>
-  </head>
-  <body>
-  <h1>Hargata Softworks</h1>
-    <h2>Price Utah 84501</h2>
-    <hr/>
-  <h2>What we do</h2>
-  <p>Make software that people want to use and enjoy using</p>
-  <h2>Where are we located</h2>
-  <p>We currently don't have an office space nor a PO Box set up</p>
-    <h2>Background</h2>
-    <ul>
-      <li>Over a decade of experience in Software Development</li>
-      <li>Can code in pretty much every framework/language/system</li>
-      <li>5+ YOE Building and Maintaining Software in Banking and Energy sectors</li>
-      <li>BSc. Accounting and Information Systems from Utah State University</li>
-    </ul>
-  <h2>Projects</h2>
-    <p><a href="https://lubelogger.com">LubeLogger - Web Based Vehicle Maintenance and Fuel Mileage Tracker</a></p>
-  <h2>Contact Us</h2>
-  <p><a href="mailto:hargatasoftworks@gmail.com">Email(response not guaranteed)</a></p>
-  </body>
+	<link href='https://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+	:root {
+		--bc-width: 36.297828vw;
+		--bc-height: calc(var(--bc-width) * 0.57251908396946564885496183206106870229);
+	}
+	.first-name {
+			font-size: 0.8em;
+			font-weight: bold;
+		}
+		.last-name {
+			font-size: 0.9em;
+			font-weight: bold;
+		}
+		.title { 
+			font-size: 0.7em;
+		}
+		.company-description {
+			font-size: 0.51em;
+		}
+	@media (min-width: 1100px) {
+        .first-name {
+			font-size: 1.6vw;
+			font-weight: bold;
+		}
+		.last-name {
+			font-size: 1.8vw;
+			font-weight: bold;
+		}
+		.title { 
+			font-size: 1.2vw;
+		}
+		.company-description {
+			font-size: 0.87vw;
+		}
+	}
+		.business-card {
+			width: 350px;
+			height: 200px;
+			min-width: var(--bc-width);
+			min-height: var(--bc-height);
+			background-image: radial-gradient(circle, white 65%, #f1f1f1);
+			font-family: 'Balthazar';
+		}
+    </style>
+</head>
+<body>
+    <div class="container" style="height:85vh;">
+        <main role="main" style="height:100%">
+            <div class="row mt-2" style="height:100%">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class='business-card d-flex flex-column justify-content-between'>
+						<div class="row mt-2 ms-2 me-2 d-flex justify-content-between">
+						<div class="col-6"><span class='title'><a class='link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover' href='mailto:hargatasoftworks@gmail.com'>EMAIL US</a></span></div>
+						<div class="col-6 text-end">
+						<span class='title'>HARGATA SOFTWORKS</span>
+						<br /><span class='company-description'>SOFTWARE DEVELOPERS</span>
+						</div>
+						</div>
+						<div class="row">
+						<div class="col-12 text-center">
+						<span class='first-name'>HARGATA</span>
+						<span class='last-name'>SOFTWORKS</span>
+						<br /><span class='title'>ENGINEER</span>
+						</div>
+						</div>
+						<div class="row mb-2">
+						<div class="col-12 text-center"><span class='title'>PRICE UTAH 84501</span></div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
