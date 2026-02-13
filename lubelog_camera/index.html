@@ -122,6 +122,24 @@
 			background-size:contain;
 			opacity: 0.5;
 		}
+		
+		/* Portrait orientation styles (height is greater than width) */
+		@media screen and (orientation: portrait) {
+		.container {
+			/* Apply normal styles or specific portrait rotation if needed */
+			transform: rotate(0deg);
+		}
+		}
+		
+		/* Landscape orientation styles (width is greater than height) */
+		@media screen and (orientation: landscape) {
+		.container {
+			/* Rotate the div 90 degrees clockwise */
+			transform: rotate(90deg);
+			/* Adjust positioning if needed after rotation */
+			/* e.g., transform-origin: top left; */
+		}
+		}
     </style>
 </head>
 <body>
