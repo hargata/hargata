@@ -122,11 +122,27 @@
 			background-size:contain;
 			opacity: 0.5;
 		}
+		
+		/* Landscape orientation styles (width is greater than height) */
+		@media screen and (orientation: landscape) {
+		.hideOnLandScape {
+			display:none;
+		}
+		.container {
+			height: 100dvh;
+		}
+		.controls {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			z-index: 2;
+		}
+		}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📷 LubeLogger Camera</h1>
+        <h1 class="hideOnLandScape">📷 LubeLogger Camera</h1>
         
         <div class="camera-container">
 			<div class="video-overlay"></div>
@@ -141,7 +157,7 @@
 			<canvas id="canvas" style="display:none;"></canvas>
         </div>
 
-        <div class="status" id="status"></div>
+        <div class="status hideOnLandScape" id="status"></div>
         <div class="info">Displaying in 4:3 aspect ratio</div>
     </div>
 
