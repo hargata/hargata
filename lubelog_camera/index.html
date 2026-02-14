@@ -30,6 +30,37 @@
 		.video-overlay-container{
 			position: absolute;
 		}
+		@media (orientation: portrait) {
+			.landScapePrompt{
+				display:block;
+			}
+		}
+		@media (orientation: landscape) {
+			.landScapePrompt{
+				display:none;
+			}
+		}
+		.landScapePrompt{
+			position:absolute;
+			top: 0;
+			left: 0;
+			z-index: 3;
+			width:100dvw;
+			height:100dvh;
+			background-color: #6c757d;
+			opacity: 0.5;
+		}
+		.landScapePromptText{
+			height:100%;
+			width:100%;
+		}
+		.landScapePromptIcon{
+			animation: counterClockwiseRotate 2s ease-in-out infinite;
+		}
+		@keyframes counterClockwiseRotate {
+			0% { transform: rotate(0deg); }
+			50%, 100% { transform: rotate(-90deg); }
+		}
 	</style>
 </head>
 <body>
@@ -45,6 +76,12 @@
 </div>
 <div id="videoOverlayContainer" class="video-overlay-container d-flex justify-content-center align-items-center">
 	<div class="video-overlay"></div>
+</div>
+</div>
+<div class="landScapePrompt">
+<div class="landScapePromptText d-flex justify-content-center align-items-center flex-column p-2">
+<span class="display-1 landScapePromptIcon"><i class="bi bi-phone"></i></span>
+<span class="display-1">Rotate Phone to Landscape Mode</span>
 </div>
 </div>
 <a id="download-link" style="display:none;"></a>
@@ -109,7 +146,7 @@ function captureAndDownload(){
 	canvas.toBlob((blob) => {
 		const objectUrl = URL.createObjectURL(blob);
 		downloadLink.href = objectUrl;
-		downloadLink.download = 'webcam-photo.png'; // Set the download file name
+		downloadLink.download = `${crypto.randomUUID()}.png`; // Set the download file name
 		downloadLink.click(); // Make the link visible
 	}, 'image/png');
 }
