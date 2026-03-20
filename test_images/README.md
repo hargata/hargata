@@ -1,3 +1,5 @@
+![image](https://github.com/hargata/lubelog/assets/155338622/545debcd-d80a-44da-b892-4c652ab0384a)
+
 ![image](hero_image.png)
 
 Self-Hosted, Open-Source, Web-Based Vehicle Maintenance and Fuel Mileage Tracker
