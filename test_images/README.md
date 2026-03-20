@@ -2,13 +2,11 @@
 
 Self-Hosted, Open-Source, Web-Based Vehicle Maintenance and Fuel Mileage Tracker
 
+Website: https://lubelogger.com
+
 ---
 
 ![image](hero_image.png)
-
-[Website](https://lubelogger.com)
-
-[Documentation](https://docs.lubelogger.com)
 
 ## Why
 Because nobody should have to deal with a homemade spreadsheet or a shoebox full of receipts when it comes to vehicle maintenance.
